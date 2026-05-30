@@ -1,0 +1,15 @@
+Algoritmo vigesimo
+	
+	definir number como real
+	definir number2 como real
+	definir producto como real
+	
+	Escribir "Bienvenido, si quiere realizar saber la tabla de multiplicar del 1 al 10 de un número, entonces ingrese un valor"
+	Leer number
+	
+	Para number2<-1 Hasta 10 Con Paso 1 Hacer
+		producto=number*number2
+		Escribir number," x ", number2, " = ", producto
+	Fin Para	
+	
+FinAlgoritmo

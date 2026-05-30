@@ -1,0 +1,29 @@
+Algoritmo segundoejercicio
+	definir sueldo_base Como real
+	definir sueldo_final Como real
+	definir comision Como real
+	definir venta_total Como real
+	Definir venta1, venta2, venta3 Como real
+
+	Escribir "Ingrese su sueldo base"
+	Leer sueldo_base
+	
+	Escribir "Cuánto dinero ganó por la primera venta?"
+	Leer venta1
+	
+	Escribir "Cuánto dinero ganó por la segunda venta?"
+	Leer venta2
+
+	Escribir "Cuánto dinero ganó por la tercera venta?"
+	Leer venta3
+	
+	venta_total<-venta1 + venta2 + venta3
+	comision<-venta_total*0.10
+	
+	Escribir "El porcentaje por comision es del 10%, por lo que este mes obtuvo $", comision, " pesos"
+	sueldo_final<-sueldo_base+comision
+	
+	Escribir "Por lo tanto, entre su sueldo base y comisión, cobrará $", sueldo_final, " pesos"
+	
+	
+FinAlgoritmo

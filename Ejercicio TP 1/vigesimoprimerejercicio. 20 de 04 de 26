@@ -1,0 +1,16 @@
+Algoritmo vigesimoprimero
+	
+	definir clave como caracter
+	
+	Escribir "Por favor ingrese su contraseña"
+	Leer clave
+	
+	mientras clave <> "1234"
+		Escribir "Clave incorrecta.Intente de nuevo"
+		leer clave
+	FinMientras
+	
+	Escribir "Clave correcta. Acceso concedido"
+	
+	
+FinAlgoritmo

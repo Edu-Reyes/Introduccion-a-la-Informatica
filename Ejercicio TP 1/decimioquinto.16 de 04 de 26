@@ -1,0 +1,111 @@
+Algoritmo decimioquinto
+	
+	definir matematica,fisica,quimica como real
+	definir primer_tareaM,segunda_tareaM,tercer_tareaM como real
+	definir primer_tareaF,segunda_tareaF como real
+	definir primer_tareaQ,segunda_tareaQ,tercer_tareaQ como real
+	definir promedio_general, promedioM, promedioQ, promedioF como real
+	definir notas, examen como real
+	definir notasM, examenM, notasF, examenF, notasQ, examenQ como real
+	
+	Repetir
+		Escribir "Ingrese su calificación en el examen de Matemática"
+		leer matematica
+	Hasta Que matematica>=0 y matematica < 11
+	
+	Repetir
+		
+		Escribir "Ingrese la calificación de sus tareas"
+		Escribir "PRIMER TAREA:"
+		leer primer_tareaM
+		
+	Hasta Que primer_tareaM>=0 y primer_tareaM < 11	
+	
+	Repetir
+		Escribir "SEGUNDA TAREA:"
+		leer segunda_tareaM
+		
+	Hasta Que segunda_tareaM>=0 y segunda_tareaM < 11
+	
+	Repetir
+		Escribir "TERCER TAREA:"
+		leer tercer_tareaM
+
+	Hasta Que tercer_tareaM>=0 y tercer_tareaM < 11
+	
+	
+	notasM=(( primer_tareaM + segunda_tareaM + tercer_tareaM)/3)*0.1
+	examenM= matematica*0.9
+	promedioM= notasM+examenM	
+	
+	Escribir "Tu promedio en Matemática es de", promedioM
+	
+	
+	
+	Repetir
+		Escribir "Ingrese su calificación en el examen de Física"
+		leer fisica
+	Hasta Que fisica>=0 y fisica < 11
+	
+	Repetir
+		
+		Escribir "Ingrese la calificación de sus tareas:"
+		Escribir "PRIMER TAREA:"
+		leer primer_tareaF
+		
+	Hasta Que primer_tareaF>=0 y primer_tareaF < 11
+	
+	Repetir
+		Escribir "SEGUNDA TAREA:"
+		leer segunda_tareaF
+		
+		Hasta Que segunda_tareaF>=0 y segunda_tareaF < 11
+	
+	
+	notasF=(( primer_tareaF + segunda_tareaF)/2)*0.2
+	examenF= fisica*0.8
+	promedioF= notasF+examenF	
+	
+	Escribir "Tu promedio en Física es de", promedioF
+	
+	
+	
+	
+	Repetir
+		Escribir "Ingrese su calificación en el examen de Química"
+		leer quimica
+	Hasta Que quimica>=0 y quimica < 11
+	
+	Repetir
+		
+		Escribir "Ingrese la calificación de sus tareas:"
+		Escribir "PRIMER TAREA:"
+		leer primer_tareaQ
+		
+	Hasta Que primer_tareaQ>=0 y primer_tareaQ < 11
+	
+	Repetir
+		Escribir "SEGUNDA TAREA:"
+		leer segunda_tareaQ
+		
+	Hasta Que segunda_tareaQ>=0 y segunda_tareaQ < 11
+	
+	Repetir
+		Escribir "TERCER TAREA:"
+		leer tercer_tareaQ
+		
+	Hasta Que tercer_tareaQ>=0 y tercer_tareaQ < 11
+		
+	
+	notasQ=(( primer_tareaQ + segunda_tareaQ + tercer_tareaQ)/3)*0.15
+	examenQ= quimica*0.85
+	promedioQ= notasQ+examenQ	
+	
+	Escribir "Tu promedio en Química es de", promedioQ
+	
+	
+	promedio_general= (promedioM + promedioF + promedioQ)/3
+	
+	Escribir "Su promedio general será de ", promedio_general
+	
+FinAlgoritmo

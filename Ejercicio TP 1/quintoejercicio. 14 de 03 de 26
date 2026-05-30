@@ -1,0 +1,23 @@
+Algoritmo quintoejercicio
+	
+	definir alumnos Como entero
+	definir hombres Como entero
+	definir mujeres Como entero
+	definir porcentaje_hombres, porcentaje_mujeres Como real
+	
+	Escribir "Cuantos integrantes alumnos hay en el aula"
+	Leer alumnos
+	
+	Escribir "Cuántos son hombres?"
+	Leer hombres
+	
+	Escribir "Y cuántas mujeres?"
+	Leer mujeres
+	
+	porcentaje_hombres<- (hombres/alumnos)*100
+	
+	porcentaje_mujeres<- (mujeres/alumnos)*100
+	
+	Escribir "Entonces hay un %", porcentaje_hombres, " de hombres y %", porcentaje_mujeres, " de mujeres en la clase"	
+	
+FinAlgoritmo

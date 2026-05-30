@@ -1,0 +1,53 @@
+Algoritmo cuartoejercicio
+	
+	definir operacion como entero
+	definir calculo como real
+	definir num1, num2 como entero
+	
+	Escribir "Ingrese qué operación quisiera realizar: 1_SUMA, 2_RESTA, 3_MULTIPLICACION, 4_DIVISIÓN. Cuando desee finalizar escriba 5"
+	leer operacion 
+	
+	mientras operacion <> 5 hacer
+		Segun operacion Hacer
+			1:
+				Escribir "Decidiste sumar, ingresa los números:"
+				leer num1
+				leer num2
+				calculo= num1+num2
+				Escribir "El resultado es:" , calculo;
+			2:
+				Escribir "Decidiste restar, ingresa los números:"
+				leer num1
+				leer num2
+				calculo= num1-num2
+				Escribir "El resultado es:", calculo;
+			3:
+				Escribir "Decidiste multiplicar, ingresa los números:"
+				leer num1
+				leer num2
+				calculo= num1*num2
+				Escribir "El resultado es:", calculo;
+			4:
+				Escribir "Decidiste dividir, ingresa los números:"
+				leer num1
+				leer num2
+				Si num2=0 Entonces
+					Escribir "Error"
+				SiNo
+					calculo= num1/num2
+					Escribir"El resultado es:", calculo;
+				Fin Si
+				
+			De Otro Modo:
+				Escribir "Opcion inválida"
+		Fin Segun
+		
+		Escribir "Ingrese qué operación quisiera realizar: 1_SUMA, 2_RESTA, 3_MULTIPLICACION, 4_DIVISIÓN. Cuando desee finalizar escriba 5"
+		leer operacion 
+		
+	finmientras
+	
+	Escribir "Ok, muchas gracias por utilizar este programa"
+	
+	
+FinAlgoritmo

@@ -1,0 +1,21 @@
+Algoritmo decimoprimerejercicio
+	
+	definir presupuestoanual como real
+	definir ginecologia, traumatologia, pediatria como real
+	
+	Escribir "Por favor, ingrese el presupuesto anual"
+	Leer presupuestoanual
+	
+	ginecologia<- presupuestoanual*0.40
+	traumatologia<-  presupuestoanual*0.30
+	pediatria<-  presupuestoanual*0.30
+	
+	Escribir "Por el dato ingresado, se determina los siguientes ingresos en las siguientes áreas:"
+	
+	Escribir "GINECOLOGÍA= $", ginecologia, " de pesos"
+	Escribir "TRAUMATOLOGÍA= $", traumatologia, " de pesos"
+	Escribir "PEDIATRÍA= $", pediatria, " de pesos"
+		
+	
+	
+	FinAlgoritmo

@@ -1,0 +1,36 @@
+Algoritmo tercerejercicio
+	
+	definir arreglo, numero_ como entero
+	definir i, n, posicion como real
+	definir encontrado como logico
+	n <-10
+	
+	dimension arreglo[n]
+	
+	Para i<-0 Hasta n-1 Con Paso 1 Hacer
+		arreglo[i] <- azar(15)
+	Fin Para
+	
+	Escribir "Por favor, ingrese el número que quisiera buscar del 1-15. "
+	leer numero_
+	
+	i<- 0
+	encontrado <- falso
+	
+	mientras (i<10) y (encontrado=falso) hacer
+		si arreglo[i] = numero_ entonces
+			encontrado = verdadero
+		sino
+			i = i + 1
+		FinSi
+	FinMientras
+	
+	si encontrado entonces
+		Escribir "Muy bien, ha encontrado el numero. Estaba en la posición ", i;
+	sino 
+		Escribir "Qué lástima, ese no era."
+	FinSi
+	
+	
+
+FinAlgoritmo

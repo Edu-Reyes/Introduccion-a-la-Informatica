@@ -1,0 +1,14 @@
+Algoritmo novenoejercicio
+	
+	Definir edad como entero
+	definir pulsaciones como real
+	
+	
+	Escribir "Si quiere saber el numero de pulsaciones, dígame cuantos años tiene:"
+	Leer edad
+	
+	pulsaciones<- (200-edad) / 10
+	
+	Escribir "Usted tiene ", pulsaciones, " pulsaciones por cada 10 segundos de ejercicio según su edad"
+FinAlgoritmo
+	

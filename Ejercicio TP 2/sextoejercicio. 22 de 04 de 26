@@ -1,0 +1,30 @@
+Algoritmo sin_titulo
+	
+	definir numeros_, i, n, j como entero
+	definir arreglo como entero
+	definir suma, promedio como real
+	n<- 20
+	
+	dimension arreglo[n]	
+	
+	Escribir "Por favor, ingrese 20 números positivos)"
+	Leer numeros_
+	
+	i<-0
+	
+	Mientras (numeros_>= 0) y (i < n)  Hacer
+		arreglo[i] <- numeros_
+		i <- i + 1 //significa siguiente numero
+		leer numeros_
+	Fin Mientras
+	
+	suma<-0 
+	
+	Para j<-0 Hasta i-1 Con Paso 1 Hacer //j recorre todos los valores de i
+		suma = suma + arreglo[j] 
+	Fin Para
+	
+	promedio= suma/i // divide la suma por la cantidad de i que haya
+	
+	Escribir " La suma de los valores del arreglo es ", suma, " y el promedio de los valores es ", promedio;
+fin algoritmo

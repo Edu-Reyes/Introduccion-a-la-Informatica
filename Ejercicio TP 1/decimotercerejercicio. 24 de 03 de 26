@@ -1,0 +1,44 @@
+Algoritmo decimotercerejercicio
+	definir lunes, miercoles, viernes como real
+	definir promedio como real
+	
+	Escribir "Ingrese el tiempo realizado en minutos el Lunes"
+	Leer lunes
+	
+	Mientras lunes<=0 Hacer
+		Escribir "Tiempo invalido, ingrese nuevamente"
+		leer lunes
+	Fin Mientras
+	
+	
+	Escribir "Ingrese el tiempo realizado en minutos el Miercoles"
+	Leer miercoles
+	
+	Mientras miercoles<=0 Hacer
+		Escribir "Tiempo invalido, ingrese nuevamente"
+	Fin Mientras
+	
+	
+	Escribir "Ingrese el tiempo realizado en minutos el Viernes"
+	Leer viernes
+	
+	Mientras viernes<=0 Hacer
+		Escribir "Tiempo invalido, ingrese nuevamente"
+		leer viernes
+	Fin Mientras
+	
+	
+	
+	promedio= (lunes+miercoles+viernes)/3
+	
+	Escribir "Por lo tanto, el tiempo promedio para recorrer el trayecto es de ", promedio, " minutos"
+	
+	
+	
+	
+	
+	
+	
+	
+	
+FinAlgoritmo

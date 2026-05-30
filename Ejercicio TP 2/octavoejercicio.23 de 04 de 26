@@ -1,0 +1,65 @@
+Algoritmo octavoejercicio
+	
+	definir arreglo_nombres como cadena
+	definir promedio Como Real
+	definir i, n, contador, arreglo_nota1, arreglo_nota2 como entero
+	definir  opcion_ Como Cadena
+	
+	n <- 10
+	
+	dimension arreglo_nombres[n]
+	dimension arreglo_nota1[n]
+	dimension arreglo_nota2[n]
+	
+	i<- 0
+	contador <- 0
+	
+	
+	opcion_ <-""
+	
+
+	
+	Mientras opcion_ <> "salir" Hacer
+		
+		Escribir "Por favor, elija la opción que requiera:"
+		Escribir "a- Registrar alumno y sus 2 notas"
+		Escribir "b- Ver promedio de alumnado"
+		
+		leer opcion_ 
+		
+		Segun opcion_ Hacer
+			"a":
+				Si contador < n Entonces
+					Escribir "Ingrese el nombre de alumno:"
+					leer arreglo_nombres[contador]
+					
+					Escribir "Ingrese la primera nota del alumno de alumno:"
+					leer arreglo_nota1[contador]
+					
+					Escribir "Ingrese la segunda nota del alumno:"
+					leer arreglo_nota2[contador]
+					
+					contador <- contador + 1
+					
+				SiNo
+					Escribir "No se pueden ingresar más datos"
+				
+				Fin Si
+				
+			"b": 
+				Si contador = 0 Entonces
+					Escribir "No se ingresó ningun alumno"
+				SiNo
+					Para i<-0 Hasta contador-1 Con Paso 1 Hacer
+						promedio= (arreglo_nota1[i] + arreglo_nota2[i])/2
+						
+						Escribir "El alumno ", arreglo_nombres[i], " tiene un promedio de ", promedio
+					Fin Para
+				Fin Si
+			De Otro Modo:
+				Si opcion_= "salir" Entonces
+					Escribir "Muchas gracias por usar este programa."
+				Fin Si				
+		Fin Segun
+	Fin Mientras
+	finalgoritmo

@@ -1,0 +1,75 @@
+Algoritmo decimocuarto
+	
+	definir inversion1, inversion2, inversion3 como real
+	definir total como real
+	definir porcentaje1, porcentaje2, porcentaje3 como real
+	definir inversores como caracter
+	
+	Escribir "Cuánto piensa invertir?"
+	leer inversion1
+	
+	
+	
+	Mientras inversion1 <=0 Hacer
+		Escribir "No sea vivo y ponga una inversión inicial"
+		leer inversion1
+		
+		Si  inversion1 >0 entonces
+		Escribir "Muy bien, entonces usted a decidido invertir $", inversion1," pesos"
+	Fin Si
+	Fin Mientras
+	
+	
+	Escribir "Cuánto piensa invertir?"
+	leer inversion2
+	
+	Mientras inversion2 <=0 Hacer
+		Escribir "No sea vivo y ponga una inversión inicial"
+		leer inversion2
+		
+		Si  inversion2 >0 entonces
+			Escribir "Muy bien, entonces usted a decidido invertir $", inversion2," pesos"
+		Fin Si
+	Fin Mientras
+	
+	Escribir "Cuánto piensa invertir?"
+	leer inversion3
+	
+	Mientras inversion3 <=0 Hacer
+		Escribir "No sea vivo y ponga una inversión inicial"
+		leer inversion3
+		
+		Si  inversion3 >0 entonces
+			Escribir "Muy bien, entonces usted a decidido invertir $", inversion3," pesos"
+		Fin Si
+	Fin Mientras	
+	
+	total= (inversion1+inversion2 + inversion3)
+	
+	porcentaje1= (Inversion1/total) *100
+	porcentaje2= (Inversion2/total) *100
+	porcentaje3= (Inversion3/total) *100
+	
+	Escribir "Por lo tanto, la inversión total es de $", total," pesos."
+	
+	
+	Escribir "Si usted quiere saber su porcentaje correspondiente de la empresa elija la ópcion según cuando haya invertido. INVERSOR 1, INVERSOR 2, INVERSOR 3. Cuando le den el dato, ingrese FINALIZAR"
+	leer inversores
+	
+	mientras inversores <> "finalizar" 
+	
+	Segun inversores Hacer
+		"inversor 1":
+			Escribir "Su porcentaje dentro de la empresa es %", porcentaje1;
+		"inversor 2":
+		Escribir "Su porcentaje dentro de la empresa es %", porcentaje2;
+		"inversor 3":
+			Escribir "Su porcentaje dentro de la empresa es %", porcentaje3;
+		De Otro Modo:
+			Escribir "Usted no ha invertido"
+	Fin Segun
+	leer inversores
+	
+	finmientras
+	
+FinAlgoritmo

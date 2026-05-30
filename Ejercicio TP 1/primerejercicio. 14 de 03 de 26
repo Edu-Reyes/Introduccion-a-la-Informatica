@@ -1,0 +1,9 @@
+Algoritmo primerejercicio
+	definir ganancia como entero
+	definir inversion Como Entero
+	Escribir "Ingrese el monto a invertir";
+	Leer inversion
+	Escribir "El monto es $", inversion, " pesos"
+	ganancia<-inversion*0.02
+	Escribir "El porcentaje de ganancia mensual es de 2%, por lo que recibirá $", ganancia, " pesos";
+FinAlgoritmo

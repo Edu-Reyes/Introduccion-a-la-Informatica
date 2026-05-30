@@ -1,0 +1,71 @@
+Algoritmo septimoejercicio
+	
+	definir temperatura, promedio, suma  como real
+	definir arreglo, i,n, j, mayor, posicionmayor como entero
+	definir arreglo_dias, opcion_ como cadena
+	
+	n<-7
+	
+	dimension arreglo[n] //arreglos
+	dimension arreglo_dias[7]
+	
+	arreglo_dias[0]<- "Lunes"
+	arreglo_dias[1]<- "Martes"
+	arreglo_dias[2]<- "Miercoles"
+	arreglo_dias[3]<- "Jueves"
+	arreglo_dias[4]<- "Viernes"
+	arreglo_dias[5]<- "Sábado"
+	arreglo_dias[6]<- "Domingo"
+	
+	
+	Para i<-0 Hasta n-1 Con Paso 1 Hacer //le doy  valores al azar para la temperatura
+		arreglo[i] <- azar(45)
+	Fin Para
+	
+	suma<-0 // acumulador para poder crear la variable suma
+	
+	Para j<-0 Hasta n-1 Con Paso 1 Hacer
+		suma = suma + arreglo[j]
+	Fin Para
+	
+	promedio= suma/n //promedio 
+	
+	mayor <- arreglo[0] // par poder comparar, se necesita un valor inicial porque sino no se podría ejecutar, por eso le doy como valor inicial el primer valor del arreglo para que luego compare
+	
+	posicionmayor <- 0 //  Esto guarda en que posicion esta la temperatura mas alta. 
+	
+	opcion_ <- "" //para poder darle un  valor a opcion_
+	
+	Escribir "Hola, que opción quisiera elegir:"
+	Escribir "a_ Ver todas las temperaturas de la semana"
+	Escribir "b_ Ver el promedio de temperatura "
+	Escribir "c_ Ver el día más caluroso de la semana"
+	Escribir "Si quiere dejar de utilizar el programa, escriba salir"
+
+	Mientras opcion_ <> "Salir" Hacer
+
+		Segun opcion_ Hacer
+			"a":
+				Para i<-0 Hasta 6 Con Paso 1 Hacer
+					Escribir "La temperatura del dia ", arreglo_dias[i], " es de ", arreglo[i], "°" //tener el mismo índice (i) conecta los dos arreglos arreglos
+					Fin Para
+			"b":
+				Escribir "Este es el promedio de la temperatura en la semana ", promedio, "°"
+			"c":
+				Para i<-1 Hasta n-1 Con Paso 1 Hacer //empieza en 1 porque el 0 esta usado como base. ya que mayor <- arreglo[0].
+					
+					Si arreglo[i] > mayor Entonces //Acá compara los datos de cual es mayor y me dice en que posicion del arreglo con los dias está, si me sale 25 como el mayor valor y está en la posicion 3, sería miercoles
+						mayor <- arreglo [i]
+						posicionmayor <- i
+					Fin Si
+				fin para
+				
+				Escribir "El día de la semana con mayor temperatura es ", arreglo_dias[posicionmayor], " con ", mayor, "°"
+			De Otro Modo:
+				Si opcion_= "salir" Entonces
+					Escribir "Muchas gracias por usar este programa."
+				Fin Si
+		Fin Segun	
+		leer opcion_
+	Fin Mientras	
+FinAlgoritmo

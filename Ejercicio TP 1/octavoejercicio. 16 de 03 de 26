@@ -1,0 +1,28 @@
+Algoritmo octavoejercicio
+	
+	definir volumen como real
+	definir presion como real
+	definir temperatura como real
+	definir masa como real
+	
+	
+ 	
+	Escribir "Si quiere calcular la masa, me deberá brindar las medidas del VOLÚMEN, la PRESIÓN y TEMPERATURA (en grados)";
+	
+	Escribir "VOLÚMEN ="
+	Leer volumen
+	
+	Escribir "PRESIÓN ="
+	Leer presion
+	
+	Escribir "TEMPERATURA ="
+	Leer temperatura
+	
+	masa<- (presion*volumen)/ (0.37*(temperatura + 460))
+	
+	Escribir "La masa que usted quiere averiguar es ", masa, " gramos" 
+	
+	 
+	
+	
+FinAlgoritmo

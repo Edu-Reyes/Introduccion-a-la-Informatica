@@ -1,0 +1,64 @@
+Algoritmo sin_titulo
+	
+	definir arreglo1 como cadena
+	definir total, arreglo2 como real
+	definir numero_ como entero
+	
+	dimension arreglo1[6] 
+	
+	
+	arreglo1[1] <- "Papas fritas";
+	arreglo1[2] <- "Lata de gaseosa";
+	arreglo1[3] <- "Bebida energética";
+	arreglo1[4] <- "Chocolate";
+	arreglo1[5] <- "Sandwich de miga";
+	
+	
+	
+	dimension arreglo2[6]
+	
+	
+	arreglo2[1] <- 1400;
+	arreglo2[2] <- 1000;
+	arreglo2[3] <- 2500;
+	arreglo2[4] <- 700;
+	arreglo2[5] <- 1200;
+	
+	total <-0
+	
+	Escribir "Hola, por favor ingrese un número del 1 al 5 de lo que quisiera comprar. Cuando desee terminar,ponga 0"
+	leer numero_	
+	
+	
+	mientras numero_<>0 hacer 
+		Segun numero_ Hacer
+			1:
+				Escribir "Usted ha elegido ", arreglo1[numero_], " que cuesta $", arreglo2[numero_]
+				total<- total+ arreglo2[numero_]
+			2:
+				Escribir "Usted ha elegido ", arreglo1[numero_], " que cuesta $", arreglo2[numero_]
+				total<- total+ arreglo2[numero_]
+
+			3:
+				Escribir "Usted ha elegido ", arreglo1[numero_], " que cuesta $", arreglo2[numero_]
+				total<- total+ arreglo2[numero_]
+
+			4:
+				Escribir "Usted ha elegido ", arreglo1[numero_], " que cuesta $", arreglo2[numero_]
+				total<- total+ arreglo2[numero_]
+
+			5:
+				Escribir "Usted ha elegido ", arreglo1[numero_], " que cuesta $", arreglo2[numero_]
+				total<- total+ arreglo2[numero_]
+	
+			De Otro Modo:
+				Escribir "Ingreso inválido, intente nuevamente"
+		Fin Segun
+		
+		leer numero_
+		
+	fin mientras
+	
+	Escribir "El monto a pagar es de $", total," pesos"
+	
+FinAlgoritmo

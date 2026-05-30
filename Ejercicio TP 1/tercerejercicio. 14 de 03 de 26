@@ -1,0 +1,48 @@
+Algoritmo tercerejercicio
+	
+	definir producto Como caracter
+	definir total Como real
+	definir descuento Como real
+	definir precio_final Como real
+	
+	total<-0
+	
+	Escribir "Ingrese cual de los siguientes productos ha comprado: PAN, GASEOSA, AGUA, LECHE, JABON, GALLETITA, MANTECA, CAFE. Cuando termine de ingresar, escriba FINALIZAR"
+	Leer producto
+	
+	Mientras producto <> "finalizar"
+	
+	Segun producto Hacer
+		"pan":
+			total<- total + 25
+		"gaseosa":
+			total<- total + 35
+		"leche":
+			total<- total + 20
+		"cafe":
+			total<- total + 100
+		"agua":
+			total<- total + 10
+		"manteca":
+			total<- total + 30
+		"jabon":
+			total<- total + 15
+		"galletita":
+			total<- total + 35
+			
+		
+		De Otro Modo:
+			Escribir "No hay ese producto"
+	Fin Segun
+	
+	Leer producto
+	
+	fin mientras
+	
+	descuento<- total*0.15
+	precio_final<- total-descuento
+	
+	Escribir "El total de la compra es $", total, " pesos"
+	Escribir "Pero tiene un 15% de descuento, por lo que debe pagar $", precio_final, " pesos"
+
+FinAlgoritmo

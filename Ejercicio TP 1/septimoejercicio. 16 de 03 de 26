@@ -1,0 +1,20 @@
+Algoritmo septimoejercicio
+	
+	definir bolivares como real
+	definir valordolar como real
+	definir cambio como real
+	
+	Escribir "Ingrese la cantidad de bolívares a cambiar"
+	Leer bolivares
+	
+	Escribir "Ingrese la cotización del dolar en su país al día de hoy"
+	Leer valordolar
+	
+	cambio<- bolivares/valordolar
+	
+	Escribir "Usted recibirá $", cambio, " dólares segun la cotización actual"
+	
+	
+	
+
+FinAlgoritmo

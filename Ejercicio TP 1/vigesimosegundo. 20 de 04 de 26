@@ -1,0 +1,19 @@
+Algoritmo vigesimosegundo
+	
+	definir numero_ como real
+	definir suma como real
+	
+	suma<- 0
+	
+	Repetir
+		Escribir "El siguiente programa suma los números que usted ingrese, cuando desee terminar, ingrese el número 0"
+		Leer numero_
+		
+		suma <-suma + numero_
+	Hasta Que numero_ == 0
+	
+	
+	Escribir "La suma total es ", suma;
+	
+	
+FinAlgoritmo

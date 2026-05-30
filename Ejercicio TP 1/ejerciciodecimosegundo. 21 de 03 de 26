@@ -1,0 +1,38 @@
+Algoritmo ejerciciodecimosegundo
+	
+	definir producto como caracter
+	definir precioinicial, preciofinal, ganancia como real
+	
+	Escribir "Qué producto compró?"
+	leer producto
+	
+	Escribir "Por cuánto lo compró?"
+	Leer precioinicial
+	
+	Escribir "A qué precio tiene pensado venderlo?"
+	Leer preciofinal
+	
+	
+	Mientras preciofinal<precioinicial*1.30 o preciofinal>precioinicial*2  hacer
+		Si preciofinal<precioinicial*1.30 Entonces
+			Escribir "No generará la ganancia esperada"				
+		Fin Si
+		
+		si preciofinal>precioinicial*2
+			entonces			
+			Escribir "Nadie lo comprará a ese precio"			
+		FinSi
+		
+		Escribir "Piense nuevamente"
+		leer preciofinal
+	FinMientras
+	
+	Escribir "Ese será un buen precio"
+       
+	
+FinAlgoritmo
+
+
+
+
+

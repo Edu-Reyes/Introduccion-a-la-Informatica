@@ -1,0 +1,19 @@
+Algoritmo sextoejercicio
+	
+	Definir nacimiento Como Entero
+	definir anio Como Entero
+	definir edad Como Entero
+	
+	Escribir "En que año nació"
+	Leer nacimiento
+	
+	Escribir "Estamos actualmente en el año"
+	Leer anio
+	
+ 	edad<- anio-nacimiento
+
+	Escribir "Por lo tanto, usted  tiene ", edad, " años"
+	
+	
+	
+FinAlgoritmo

@@ -1,0 +1,39 @@
+Algoritmo cuartoejercicio
+	
+	Definir nombre Como Caracter
+	Definir parcial1, parcial2, parcial3, examen_final,trabajo_final como real
+	Definir parcial,promediop, final, TP Como real
+	Definir calificacion_final Como real
+	
+	
+	Escribir "Ingrese su nombre y apellido "
+	Leer nombre
+	
+	Escribir " Ingrese su calificación en el primer parcial"
+	Leer parcial1
+	
+	Escribir " Ingrese su calificación en el segundo parcial"
+	Leer parcial2
+	
+	Escribir " Ingrese su calificación en el tercer parcial"
+	Leer parcial3
+	
+	Escribir "Ahora ingrese su calificación en el examen final"
+	Leer examen_final
+	
+	Escribir " Ingrese su calificación en el trabajo final"
+	Leer trabajo_final
+	
+	promediop<- (parcial1 + parcial2 + parcial3)/3
+	
+	parcial<- promediop*0.55
+	
+	final<- examen_final*0.30
+	
+	TP<- trabajo_final*0.15
+	
+	calificacion_final<- parcial+final+TP
+	
+	Escribir "Con los datos brindados, su calificación final en la materia Programación 1 es de " , calificacion_final;
+	
+FinAlgoritmo

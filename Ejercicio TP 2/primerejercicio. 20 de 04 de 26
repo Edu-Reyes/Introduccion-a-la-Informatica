@@ -1,0 +1,22 @@
+Algoritmo primerejercicio
+	
+	definir N como real
+	definir i como real
+	definir arreglo como real
+	
+	N<- 10 
+	
+	dimension arreglo[N]
+	
+	Para i<-0 Hasta N-1 Con Paso 1 Hacer
+		Escribir "Por favor, ingrese un numero"
+		leer arreglo[i]
+	fin Para
+	
+	Escribir "Esos numeros a la inversa quedaría asi:"
+	
+	Para i<-N-1 Hasta 0 Con Paso -1 Hacer
+		Escribir arreglo[i]
+		
+	Fin Para
+FinAlgoritmo

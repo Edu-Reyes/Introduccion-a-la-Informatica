@@ -1,0 +1,20 @@
+Algoritmo decimoejercicio
+	
+	definir sueldoneto como real
+	definir bono como real
+	definir sueldofinal como real
+	
+	Escribir "Ingrese su sueldo neto"
+	Leer sueldoneto
+	
+	bono<- sueldoneto*0.25
+	
+	Escribir "Este mes usted obtuvo un bono del 25% por el labor realizado, el cual es en total $", bono, " pesos"
+	
+	sueldofinal<- sueldoneto+bono
+	
+	Escribir "En síntesis, este mes cobrará $", sueldofinal, " pesos"
+	
+	
+		
+FinAlgoritmo

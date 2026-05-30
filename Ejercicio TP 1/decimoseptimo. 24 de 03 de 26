@@ -1,0 +1,25 @@
+Algoritmo decimoseptimo
+	
+	definir descuento1, descuento2 como real
+	definir compra como real
+	definir total1, total2 como real
+	
+	Escribir "Ingrese el total de la compra"
+	leer compra
+	
+	Mientras compra <=0 Hacer
+		Escribir "Error"
+		leer compra
+	Fin Mientras
+	
+	Si compra >= 10000 Entonces
+		descuento1= compra*0.20
+		total1= compra-descuento1
+		Escribir "Se le aplica un 20% de descuento, por lo que debe pagar $",total1," pesos"
+	SiNo
+		descuento2= compra*0.05
+		total2= compra-descuento2
+		Escribir "Se le aplica un %5 de descuento, por lo que debe pagar $", total2," pesos"
+	Fin Si
+	
+finAlgoritmo

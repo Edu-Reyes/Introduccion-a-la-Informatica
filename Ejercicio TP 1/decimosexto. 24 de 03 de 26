@@ -1,0 +1,14 @@
+Algoritmo decimosexto
+	
+	definir numero_ como entero
+	
+	Escribir "Ingrese un número"
+	Leer numero_
+	
+	Si numero_ MOD 2 = 0 Entonces
+		Escribir "Es par"
+	SiNo
+		Escribir "Es impar"
+	Fin Si
+	
+FinAlgoritmo
