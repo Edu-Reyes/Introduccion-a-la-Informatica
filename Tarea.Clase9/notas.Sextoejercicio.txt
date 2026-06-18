@@ -1,0 +1,3 @@
+pedro,10.0
+juan,7.0
+mario,3.0

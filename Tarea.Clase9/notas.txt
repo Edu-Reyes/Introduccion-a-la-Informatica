@@ -1,0 +1,1 @@
+Juan,10.0pedro,3.0juan,10.0pedro,8.0pedro,10.0juan,8.0
