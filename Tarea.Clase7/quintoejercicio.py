@@ -1,0 +1,27 @@
+"Bienvenido al programa para verificar palabras alfabéticas "
+
+def es_alfabetica(palabra):
+
+    palabra = palabra.lower()
+
+    for i in range(len(palabra) - 1):
+
+        if palabra[i] > palabra[i + 1]:
+            return False
+
+    return True
+
+
+while True:
+
+    palabra = input("Ingrese una palabra: ").strip()
+
+    if palabra.isalpha():
+        break
+
+    print("Error. Ingrese solamente letras.")
+
+if es_alfabetica(palabra):
+    print("La palabra es alfabética.")
+else:
+    print("La palabra no es alfabética.")
